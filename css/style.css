@@ -1,0 +1,184 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100vh;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+header {
+    box-sizing: border-box;
+    width: auto;
+    display: flex;
+    font-size: larger;
+    text-align: center;
+    align-items: center;
+}
+
+header h1 {
+    text-align: center;
+    margin: auto;
+    margin-left: 80%;
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+}
+
+.alunos {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.aluno {
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: silver;
+    width: calc((100% / 3) - 2rem);
+    margin: auto;
+    display: flex;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.aluno a {
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+.aluno a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.aluno img {
+    border-radius: 10px;
+}
+
+.professores {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.professor {
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: silver;
+    width: calc((100% / 2) - 2rem);
+    float: left;
+    margin: auto;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.professor a {
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+.professor a :hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.professor img {
+    border-radius: 5px;
+}
+
+.img-perfil {
+    height: 50px;
+    text-align: center;
+    display: block;
+}
+
+.name {
+    margin-left: 50px;
+}
+
+nav a {
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+
+}
+
+nav a:hover {
+    background-color: antiquewhite;
+}
+
+nav {
+
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    width: auto;
+}
+
+.materias {
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.materia{
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: silver;
+    width: calc((100% / 2) - 2rem);
+    float: left;
+    margin: auto;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.materia a {
+    text-decoration: none;
+    transition: transform 0.5s;
+}
+
+.materia a :hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
